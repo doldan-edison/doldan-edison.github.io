@@ -1,0 +1,44 @@
+<!--
+titulo: Acerca y contacto
+descripcion: Qué es Escuadrón Juegos, cómo se hacen los juegos, de qué vive el sitio y cómo avisar de un error.
+ruta: /acerca/
+seccion: acerca
+-->
+<div class="ancho lectura">
+<article class="hoja">
+
+  <h1>Acerca de este sitio</h1>
+  <p class="entrada">Escuadrón Juegos es un sitio chico de juegos para el navegador, hecho en Paraguay. Los juegos son gratis, cortos y andan igual en la PC y en el celular.</p>
+
+  <h2>Los juegos</h2>
+  <ul>
+    <li><a href="/antiplaga/">Escuadrón Antiplaga</a>: un escuadrón de fumigadores contra las hormigas que van al picnic.</li>
+    <li><a href="/cacerola/">Escuadrón Cacerola</a>: una parodia política sobre la caída de ueno bank, armada sobre el mismo motor.</li>
+  </ul>
+
+  <h2>Cómo se hacen</h2>
+  <p>Cada juego es una sola página que dibuja sobre un lienzo, sin motor de juegos ni nada que instalar. Las imágenes de los personajes y del decorado se generan con inteligencia artificial y después se recortan y se animan. La programación también se hace con ayuda de herramientas de inteligencia artificial.</p>
+  <p>La dificultad no se ajusta a ojo: cada nivel se prueba con un piloto automático que juega cientos de partidas, y se retoca hasta que los primeros niveles perdonen y los últimos castiguen los errores.</p>
+
+  <h2>Sobre la parodia</h2>
+  <p>Escuadrón Cacerola es humor político. No tiene relación con ueno bank, con el Grupo Vázquez, con el Banco Central ni con las personas caricaturizadas, y no afirma que nadie haya cometido un delito. No usa fotos de las personas ni el logo del banco. Cada chiste se apoya en un hecho publicado, y todos están en la página de <a href="/fuentes/">fuentes</a>.</p>
+
+  <h2>De qué vive el sitio</h2>
+<!--si:adsense-->
+  <p>De los anuncios. Los pone Google y nosotros no elegimos qué se anuncia. Ningún partido, empresa ni persona paga por lo que dicen los juegos.</p>
+<!--fin-->
+<!--si:!adsense-->
+  <p>Por ahora, de nada. La idea es que se sostenga con anuncios puestos por Google. Ningún partido, empresa ni persona paga por lo que dicen los juegos.</p>
+<!--fin-->
+
+  <h2 id="contacto">Contacto y correcciones</h2>
+  <p>Si encontraste un error en un juego o un dato equivocado en la página de fuentes, avisanos y lo corregimos.</p>
+<!--si:correo-->
+  <p>Escribinos a <a href="mailto:{{correo}}">{{correo}}</a>.</p>
+<!--fin-->
+<!--si:!correo-->
+  <p>Escribinos por <a href="{{contactoUrl}}" rel="noopener">{{contactoTexto}}</a>.</p>
+<!--fin-->
+
+</article>
+</div>
